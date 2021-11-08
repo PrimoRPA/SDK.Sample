@@ -60,6 +60,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrimoContainerBack.cs" />
+    <Compile Include="PrimoCustomContainerBack.cs" />
+    <Compile Include="PrimoCustomContainerV.xaml.cs">
+      <DependentUpon>PrimoCustomContainerV.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PrimoElement.xaml.cs">
       <DependentUpon>PrimoElement.xaml</DependentUpon>
     </Compile>
@@ -71,6 +76,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="PrimoCustomContainerV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PrimoElement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
